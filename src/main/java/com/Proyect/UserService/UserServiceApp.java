@@ -1,13 +1,13 @@
-package com.Proyect.SistemaPago;
+package com.Proyect.UserService;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SistemaPagoApplication {
+public class UserServiceApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SistemaPagoApplication.class, args);
+		SpringApplication.run(UserServiceApp.class, args);
 	}
 
 }
