@@ -1,17 +1,27 @@
 package com.Proyect.UserService.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "users")
 public class User {
     
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id;
     private String Nombre;
     private String Username;
-    private String Contraseña;
+    private String Password;
 
-    public User(int Id, String Nombre, String Username, String Contraseña){
+    public User(int Id, String Nombre, String Username, String Password){
         this.Id=Id;
         this.Nombre=Nombre;
         this.Username=Username;
-        this.Contraseña=Contraseña;
+        this.Password=Password;
 
     }
 
@@ -39,12 +49,12 @@ public class User {
         this.Username = Username;
     }
 
-    public String getContraseña() {
-        return Contraseña;
+    public String getPassword() {
+        return Password;
     }
 
-    public void setContraseña(String Contraseña) {
-        this.Contraseña = Contraseña;
+    public void setPassword(String Password) {
+        this.Password = Password;
     }
 
 }
