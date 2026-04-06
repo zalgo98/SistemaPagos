@@ -1,12 +1,15 @@
 package com.Proyect.UserService.controller;
 
 import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.Proyect.UserService.model.User;
 import com.Proyect.UserService.repository.UserRepository;
+
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/users")
