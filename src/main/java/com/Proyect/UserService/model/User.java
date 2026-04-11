@@ -17,12 +17,14 @@ public class User {
     private String Username;
     private String Password;
 
-    public User(int Id, String Nombre, String Username, String Password){
-        this.Id=Id;
+    public User(String Nombre, String Username, String Password){
         this.Nombre=Nombre;
         this.Username=Username;
         this.Password=Password;
 
+    }
+    public User() {
+        
     }
 
     public int getId() {
